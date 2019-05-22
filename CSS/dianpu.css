@@ -13,7 +13,7 @@
     border-radius: 0.5rem;
     text-align: center;
 }
-.Neck li>span{
+.Neck li>a>span{
     font-size: 0.2rem;
     height: 0.2rem;
     line-height: 0.2rem;
@@ -38,15 +38,17 @@
     line-height: 0.3rem;
     padding: 0.29rem 0;
     font-size: 0.32rem;
-    color: #4f5b64;
-    border-bottom: 0.01rem solid rgba(216,223,227,0.3);
-}
-.Belly>span{
-    padding-left: 0.2rem;
     color: #35bd82;
+    border-bottom: 0.01rem solid rgba(216,223,227,0.3);
+    display: flex;
+    justify-content: space-between;
+}
+.Belly span{
+    padding-left: 0.2rem;
+    color: #4f5b64;
     position: relative;
 }
-.Belly>span:before{
+.Belly span:before{
     content: "";
     width: 0.05rem;
     height: 0.05rem;
@@ -56,10 +58,21 @@
     top: 0.2rem;
     left: 0.1rem;
 }
+.Belly .Belly-more{
+    font-size: 0.22rem;
+    color: #36a8fe;
+}
+.Belly .iconfont{
+    color: #36a8fe;
+    font-size: 0.22rem;
+}
+.Belly>.Belly-more>span{
+    opacity: 0.5;
+}
 .Waist {
     width: 7.0rem;
     /*height: 8.44rem;*/
-    margin-bottom: 0.72rem;
+    /*margin-bottom: 0.72rem;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,15 +80,37 @@
 }
 .Waist li{
     width: 3.25rem;
-    height: 3.86rem;
-    /*background: #999999;*/
+    margin-bottom: 0.52rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
+.Waist>li>a{
+    /*overflow: hidden;*/
+}
+.Waist .Waist-grade{
+    display: block;
+    font-size: 0.22rem;
+    color: #fff;
+    width: 0.54rem;
+    height: 0.3rem;
+    border-radius: 0.1rem;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%),
+    linear-gradient(#44b5ff, #44b5ff);
+    text-align: center;
+    line-height: 0.22rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*.Waist-grade>.Waistgra-text{*/
+/*    font-size: 0.22rem;*/
+/*    color: #fff;*/
+/*}*/
 .Waist li .Waist-img{
-    margin: 0.15rem 1rem 0.44rem 0.72rem;
+    margin: 0.45rem 1rem 0.44rem 0.72rem;
     width: 1.53rem;
     height: 1.61rem;
 }
@@ -124,9 +159,29 @@
     font-size: 0.26rem;
     color: #3bacfe;
 }
-.Waist li>em{
-    width: 100%
+.Waist-bottom{
+    display: flex;
+    justify-content: left;
+    /*justify-content: center;*/
 }
+.Waist-bottom>span{
+    width: 1.21rem;
+    height: 0.35rem;
+    text-align: center;
+    color: #36a8fe;
+    font-size: 0.2rem;
+    margin-right: 0.21rem;
+    border-radius: 0.1rem;
+    background: rgba(54,168,254,0.1);
+}
+
+
+
+
+
+/*.Waist li>em{*/
+/*    width: 100%*/
+/*}*/
 /*.Waist li span{*/
 /*    font-size: 0.28rem;*/
 /*    color: #fbb548;*/
