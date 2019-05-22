@@ -301,7 +301,7 @@
 .smalleg {
     width: 7.0rem;
     height: 6rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -332,9 +332,12 @@
 }
 .foot{
     width: 7.0rem;
-    /*background: #3bacfe;*/
+    background: #fff;
     height: 0.75rem;
     padding: 0.16rem 0;
+    position: fixed;
+    bottom: 0;
+    right: 0.25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -342,7 +345,7 @@
 }
 .foot .foot-imgbox{
     width: 1.1rem;
-    height: 0.5rem;
+    height: 0.75rem;
     border-radius: 50%;
     /*color: #cfe9ff;*/
     display: flex;
