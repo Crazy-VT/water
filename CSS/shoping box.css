@@ -50,11 +50,16 @@
 .Neck>li>.iconfont{
     width: 0.24rem;
     height: 0.24rem;
+    text-align: center;
+    line-height: 0.24rem;
     border-radius: 50%;
     color: #eeeeee;
     background: #e7f6ff;
     margin-top: 0.75rem;
     margin-right: 0.29rem;
+}
+.Neck>li>.hot{
+    background: #37e06f;
 }
 .Neck>li>.content{
     width: 6.5rem;
