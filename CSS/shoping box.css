@@ -25,6 +25,9 @@
     margin-top: 0.75rem;
     margin-right: 0.29rem;
 }
+.Neck>li>.hot{
+    background: #37e06f;
+}
 .Neck>li>.content{
     width: 6.5rem;
     height: 2.57rem;
